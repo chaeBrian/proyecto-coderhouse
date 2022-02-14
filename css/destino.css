@@ -1,0 +1,219 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css");
+body {
+  background-color: #111111;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif; }
+
+.header nav ul li .nav-link {
+  margin: 0;
+  padding: 0px 10px;
+  background: linear-gradient(to top, #fff700, #fff700);
+  background-size: 0% 100%;
+  height: 50%;
+  background-repeat: no-repeat;
+  color: #ebebeb;
+  transition: 0.8s; }
+  .header nav ul li .nav-link:hover {
+    background-size: 100% 100%;
+    color: gray !important;
+    transition: 0.8s; }
+  .header nav ul li .nav-link:active {
+    color: none; }
+  .header nav ul li .nav-link:visited {
+    color: none; }
+
+.header__menu li {
+  margin: 0 1.1vw; }
+
+.header__boton:active {
+  border: 2px solid #fff700; }
+
+.home {
+  border-left: 0.1em solid white !important;
+  border-top: 0.1em solid white !important;
+  border-bottom: 0.1em transparent white !important;
+  border-right: 0.1em transparent white !important;
+  padding: 2vw;
+  margin-top: 2vw; }
+
+.home__carousel div div {
+  background-color: rgba(0, 0, 0, 0.542); }
+
+.home__info h1 {
+  margin: 0;
+  margin-top: 1vw;
+  margin-left: 0.5vw; }
+
+.home__info p {
+  margin: 0;
+  margin-top: 0.5vw; }
+  .home__info p a {
+    color: #fff700;
+    transition: 1s; }
+    .home__info p a:hover {
+      color: #ebebeb;
+      text-decoration: overline !important; }
+
+.noticias {
+  margin-top: 2vw; }
+
+.noticias__contenedor {
+  max-width: 800px !important;
+  background-color: transparent !important;
+  border-left: 0.1em transparent white !important;
+  border-top: 0.1em solid white !important;
+  border-bottom: 0.1em transparent white !important;
+  border-right: 0.1em solid white !important;
+  border-radius: 0vw; }
+
+.noticias__imagen {
+  margin: 0.5vw 0; }
+
+.noticias__info {
+  cursor: pointer;
+  transition: a 1.5s;
+  margin: 0vw;
+  color: #ebebeb;
+  display: flex;
+  align-items: center; }
+  .noticias__info p a {
+    color: #ebebeb;
+    transition: 1s; }
+  .noticias__info:hover a {
+    color: #fff700; }
+  .noticias__info div {
+    padding: 1vw; }
+    .noticias__info div h5 {
+      margin: 1vw 0vw;
+      font-size: 0.5em;
+      margin-left: 1vw;
+      font-style: italic; }
+
+.noticias__verMas a {
+  color: #fff700;
+  margin-right: 5em;
+  transition: 1s; }
+  .noticias__verMas a:hover {
+    color: #ebebeb;
+    text-decoration: overline !important; }
+
+.brazo__caja {
+  border: 0.1em transparent white !important;
+  background-color: transparent;
+  background-image: url(../images/png/cr7.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0;
+  border-top: 0.1em solid white !important; }
+  .brazo__caja p {
+    margin-bottom: 0.5vw; }
+  .brazo__caja h5 {
+    margin-top: 10em; }
+  .brazo__caja a {
+    margin-top: 2vw;
+    text-decoration: none;
+    color: #fff700;
+    transition: 1s; }
+    .brazo__caja a:hover {
+      color: #ebebeb;
+      text-decoration: overline; }
+
+.brazo__caja--modifier {
+  border: 0.1em transparent white !important;
+  background-color: transparent;
+  background-image: url(../images/png/salah.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0;
+  border-top: 0.1em solid white !important; }
+  .brazo__caja--modifier p {
+    margin-bottom: 0.5vw; }
+  .brazo__caja--modifier h5 {
+    margin-top: 10em; }
+  .brazo__caja--modifier a {
+    margin-top: 2vw;
+    text-decoration: none;
+    color: #fff700;
+    transition: 1s; }
+    .brazo__caja--modifier a:hover {
+      color: #ebebeb;
+      text-decoration: overline; }
+
+.galeria {
+  margin-top: 2vw; }
+  .galeria .galeria__box {
+    background-color: transparent !important;
+    border: none;
+    border-left: 0.1em transparent white !important;
+    border-top: 0.1em solid white !important;
+    border-bottom: 0.1em transparent white !important;
+    border-right: 0.1em solid white !important;
+    border-radius: 0vw; }
+    .galeria .galeria__box img {
+      padding: 10px 0; }
+    .galeria .galeria__box div {
+      background-color: rgba(0, 0, 0, 0.548);
+      height: 10rem; }
+      .galeria .galeria__box div h5 {
+        padding: 1rem; }
+  .galeria .galeria__fotos {
+    padding: 10px; }
+  .galeria p {
+    margin: 1rem 0; }
+    .galeria p a {
+      color: #fff700;
+      transition: 1s; }
+      .galeria p a:hover {
+        color: #ebebeb;
+        text-decoration: overline !important; }
+
+#photo2 {
+  border-left: 0.1em solid white !important;
+  border-top: 0.1em solid white !important;
+  border-bottom: 0.1em transparent white !important;
+  border-right: 0.1em transparent white !important;
+  border-radius: 0vw; }
+
+#photo3 {
+  border-left: 0.1em solid white !important;
+  border-top: 0.1em solid white !important;
+  border-bottom: 0.1em solid white !important;
+  border-right: 0.1em transparent white !important;
+  border-radius: 0vw; }
+
+#photo4 {
+  border-left: 0.1em transparent white !important;
+  border-top: 0.1em transparent white !important;
+  border-bottom: 0.1em solid white !important;
+  border-right: 0.1em transparent white !important;
+  border-radius: 0vw; }
+
+.footer {
+  border-left: 0.1em transparent white !important;
+  border-top: 0.1em solid white !important;
+  border-bottom: 0.1em transparent white !important;
+  border-right: 0.1em transparent white !important;
+  border-radius: 0vw;
+  margin-top: 10rem; }
+  .footer a {
+    color: #fff700;
+    transition: all 1s; }
+    .footer a:hover {
+      color: #ebebeb;
+      text-decoration: line-through 0.1rem double crimson !important; }
+
+.footer__links {
+  margin: 3rem; }
+
+.footer__links--modifier {
+  margin: 0 3rem;
+  margin-bottom: 3rem; }
+
+.copy div div {
+  justify-content: center;
+  margin: auto; }
+  .copy div div li {
+    color: #ebebeb; }
+    .copy div div li:hover {
+      color: #ebebeb; }
+    .copy div div li a {
+      color: #ebebeb; }

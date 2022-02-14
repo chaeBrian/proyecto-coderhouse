@@ -1,0 +1,300 @@
+// Index/Home
+
+// Paleta de colores
+$color1: rgb(235, 235, 235);
+$color2: rgb(255, 247, 0);
+
+
+//Header
+body{
+    background-color: rgb(17, 17, 17);
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+.header{
+    nav{
+        ul{
+            li{
+                .nav-link{
+                    margin: 0;
+                    padding: 0px 10px;
+                    background: linear-gradient(to top, $color2, $color2);
+                    background-size: 0% 100%;
+                    height: 50%;
+                    background-repeat: no-repeat;
+                    color: $color1;
+                    transition: 0.8s;
+                    &:hover{
+                        background-size: 100% 100%;
+                        color: gray !important;
+                        transition: 0.8s;
+                    }
+                    &:active{
+                        color: none;
+                    }
+                    &:visited{
+                        color: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.header__menu{
+    li{
+        margin: 0 1.1vw;
+    }
+}
+.header__boton{
+    &:active{
+        border: 2px solid $color2;
+    }
+}
+
+
+//Main
+.home{
+    border-left: 0.1em solid white !important;
+    border-top: 0.1em solid white !important;
+    border-bottom: 0.1em transparent white !important;
+    border-right: 0.1em transparent white !important;
+    padding: 2vw;
+    margin-top: 2vw;
+}
+.home__carousel{
+    div{
+        div{
+            background-color: rgba(0, 0, 0, 0.542);
+        }
+    }
+}
+.home__info{
+    h1{
+        margin: 0;
+        margin-top: 1vw;
+        margin-left: 0.5vw;
+    }
+    p{
+        margin: 0;
+        margin-top: 0.5vw;
+        a{
+            color: $color2;
+            transition: 1s;
+            &:hover{
+                color: $color1;
+                text-decoration: overline !important;
+            }
+        }
+    }
+}
+
+
+//Noticias
+.noticias{
+    margin-top: 2vw;
+}
+.noticias__contenedor{
+    max-width: 800px !important;
+    background-color: transparent !important;
+    border-left: 0.1em transparent white !important;
+    border-top: 0.1em solid white !important;
+    border-bottom: 0.1em transparent white !important;
+    border-right: 0.1em solid white !important;
+    border-radius: 0vw;
+}
+.noticias__imagen{
+    margin: 0.5vw 0;
+}
+.noticias__info{
+    cursor: pointer;
+    transition: a 1.5s;
+    margin: 0vw;
+    color: $color1;
+    display: flex;
+    align-items: center;
+    p{
+        a{
+            color: $color1;
+            transition: 1s;
+        }
+    }
+    &:hover{
+        a{
+            color: $color2;
+        }
+    }
+    div{
+        padding: 1vw;
+        h5{
+            margin: 1vw 0vw;
+            font-size: 0.5em;
+            margin-left: 1vw;
+            font-style: italic;
+        }
+    }
+}
+.noticias__verMas{
+    a{
+        color: $color2;
+        margin-right: 5em;
+        transition: 1s;
+        &:hover{
+            color: $color1;
+            text-decoration: overline !important;
+        }
+    }
+}
+//noticias/brazo
+.brazo__caja{
+    border: 0.1em transparent white !important;
+    background-color: transparent;
+    background-image: url(../images/png/cr7.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0;
+    border-top: 0.1em solid white !important;
+    p{
+        margin-bottom: 0.5vw;
+    }
+    h5{
+        margin-top: 10em;
+    }
+    a{
+        margin-top: 2vw;
+        text-decoration: none;
+        color: $color2;
+        transition: 1s;
+        &:hover{
+            color: $color1;
+            text-decoration: overline;
+        }
+    }
+}
+.brazo__caja--modifier{
+    border: 0.1em transparent white !important;
+    background-color: transparent;
+    background-image: url(../images/png/salah.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0;
+    border-top: 0.1em solid white !important;
+    p{
+        margin-bottom: 0.5vw;
+    }
+    h5{
+        margin-top: 10em;
+    }
+    a{
+        margin-top: 2vw;
+        text-decoration: none;
+        color: $color2;
+        transition: 1s;
+        &:hover{
+            color: $color1;
+            text-decoration: overline;
+        }
+    }
+}
+
+
+//Galeria
+.galeria{
+    margin-top: 2vw;
+    .galeria__box{
+        background-color: transparent !important;
+        border: none;
+        border-left: 0.1em transparent white !important;
+        border-top: 0.1em solid white !important;
+        border-bottom: 0.1em transparent white !important;
+        border-right: 0.1em solid white !important;
+        border-radius: 0vw;
+        img{
+            padding: 10px 0;
+        }
+        div{
+            background-color: rgba(0, 0, 0, 0.548);
+            height: 10rem;
+            h5{
+                padding: 1rem;
+            }
+        }
+    }
+    .galeria__fotos{
+        padding: 10px;
+    }
+    p{
+        margin: 1rem 0;
+        a{
+            color: $color2;
+            transition: 1s;
+            &:hover{
+                color: $color1;
+                text-decoration: overline !important;
+            }
+        }
+    }
+}
+#photo2{
+    border-left: 0.1em solid white !important;
+    border-top: 0.1em solid white !important;
+    border-bottom: 0.1em transparent white !important;
+    border-right: 0.1em transparent white !important;
+    border-radius: 0vw;
+}
+#photo3{
+    border-left: 0.1em solid white !important;
+    border-top: 0.1em solid white !important;
+    border-bottom: 0.1em solid white !important;
+    border-right: 0.1em transparent white !important;
+    border-radius: 0vw;
+}
+#photo4{
+    border-left: 0.1em transparent white !important;
+    border-top: 0.1em transparent white !important;
+    border-bottom: 0.1em solid white !important;
+    border-right: 0.1em transparent white !important;
+    border-radius: 0vw;
+}
+
+
+//Footer
+.footer{
+    border-left: 0.1em transparent white !important;
+    border-top: 0.1em solid white !important;
+    border-bottom: 0.1em transparent white !important;
+    border-right: 0.1em transparent white !important;
+    border-radius: 0vw;
+    margin-top: 10rem;
+    a{
+        color: $color2;
+        transition: all 1s;
+        &:hover{
+            color: $color1;
+            text-decoration: line-through 0.1rem double crimson !important;
+        }
+    }
+}
+.footer__links{
+    margin: 3rem;
+}
+.footer__links--modifier{
+    margin: 0 3rem;
+    margin-bottom: 3rem;
+}
+//copy
+.copy{
+    div{
+        div{
+            justify-content: center;
+            margin: auto;
+            li{
+                color: $color1;
+                &:hover{
+                    color: $color1;
+                }
+                a{
+                    color: $color1;
+                }
+            }
+        }
+    }
+}

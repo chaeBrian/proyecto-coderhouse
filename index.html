@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier League</title>
+    <link rel="stylesheet" href="bootstrap local/css/bootstrap.css">
+    <link rel="stylesheet" href="css/destino.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="container header">
+        <nav class="navbar navbar-expand-md row">
+            <div class="container-fluid">
+                <!-- logo -->
+                <a class="navbar-brand col-5 col-sm-3 col-lg-3" href="#"><img
+                        class="img-fluidrounded mx-auto d-block w-25" src="images/logo.png"
+                        alt="Premier League Logo"></a>
+                <!-- boton menu -->
+                <button class="navbar-toggler header__boton" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list" style="font-size: 2rem; color: rgb(255, 255, 255);"></i>
+                </button>
+                <!-- navbar -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 header__menu">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Premier League
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Players</a></li>
+                                <li><a class="dropdown-item" href="#">Managers</a></li>
+                                <li><a class="dropdown-item" href="#">Results</a></li>
+                                <li><a class="dropdown-item" href="#">Fixtures</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Clubs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Main -->
+    <main class="container home">
+        <section class="row">
+            <!-- carousel -->
+            <div id="carousel" class="carousel slide col-12 col-lg-8 col-xl-9" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner home__carousel">
+                    <div class="carousel-item active">
+                        <img src="images/carousel/pic1.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Watford 0 - 3 Norwich</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/carousel/pic2.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Everton 0 - 1 Aston Villa</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/carousel/pic3.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Brentford 1 - 2 Wolverhampton</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/carousel/pic4.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Manchester United 1 - 0 West Ham United</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- info -->
+            <div class="col-12 col-lg-4 col-xl-3 home__info">
+                <h1>Matchweek 23</h1>
+                <p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum suscipit praesentium
+                    amet, labore
+                    explicabo
+                    dolorum omnis! Aut odio ducimus ipsa numquam. Voluptate laudantium similique quos ut ullam
+                    repellendus,
+                    placeat quo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum suscipit praesentium
+                    amet, labore
+                    explicabo
+                    dolorum omnis!
+                </p>
+                <p class="text-end"><a class="text-decoration-none" href="#">More</a></p>
+            </div>
+        </section>
+    </main>
+    <!-- Noticias -->
+    <section class="container noticias">
+        <article class="row">
+            <div class="col-12 col-md-12 col-lg-7" id="contenedorNoticias">
+                <h2 class="h3">Latest News</h2>
+                <div class="card mb-3 bg-dark col-12 col-md-12 noticias__contenedor" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-12 col-md-6 noticias__imagen">
+                            <img src="images/news/Bryan-Mbeumo-Brentford.webp"
+                                class="img-fluid noticias__imagen mx-auto d-block" alt="Bryan Mbeumo Brentford">
+                        </div>
+                        <div class="col-12 col-md-6 noticias__info">
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">Preview: Man City v Brentford</h5>
+                                <p><a class="text-decoration-none link__color" href="#">Brentford target rare feat in
+                                        debut season against champions</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 bg-dark col-12 col-md-12 noticias__contenedor" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-12 col-md-6 noticias__imagen">
+                            <img src="images/news/Aston-Leeds.webp" class="img-fluid noticias__imagen mx-auto d-block"
+                                alt="Bryan Mbeumo Brentford">
+                        </div>
+                        <div class="col-12 col-md-6 noticias__info">
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">Preview: Aston Villa v Leeds</h5>
+                                <p><a class="text-decoration-none link__color" href="#">Wil Villa avoid an unwanted
+                                        first versus leeds?</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 bg-dark col-12 col-md-12 noticias__contenedor" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-12 col-md-6 noticias__imagen">
+                            <img src="images/news/Spurs-Southampton.webp"
+                                class="img-fluid noticias__imagen mx-auto d-block" alt="Bryan Mbeumo Brentford">
+                        </div>
+                        <div class="col-12 col-md-6 noticias__info">
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">Preview: Spurs v Southampton</h5>
+                                <p><a class="text-decoration-none link__color" href="#">Spurs seek to extends winning
+                                        run against Southampton</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 bg-dark col-12 col-md-12 noticias__contenedor" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-12 col-md-6 noticias__imagen">
+                            <img src="images/news/kilman.webp" class="img-fluid noticias__imagen mx-auto d-block"
+                                alt="Bryan Mbeumo Brentford">
+                        </div>
+                        <div class="col-12 col-md-6 noticias__info">
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">Talking Tactics</h5>
+                                <p><a class="text-decoration-none link__color" href="#">How Kilman is key to extending
+                                        Arsenal's goal drought</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 bg-dark col-12 col-md-12 noticias__contenedor" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-12 col-md-6 noticias__imagen">
+                            <img src="images/news/Smith.webp" class="img-fluid noticias__imagen mx-auto d-block"
+                                alt="Bryan Mbeumo Brentford">
+                        </div>
+                        <div class="col-12 col-md-6 noticias__info">
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">Preview: Wolves v Arsenal</h5>
+                                <p><a class="text-decoration-none link__color" href="#">Will Smith Rowe extend scoring
+                                        run at Wolves?</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="float-end noticias__verMas"><a class="text-decoration-none" href="#">More News</a></p>
+            </div>
+            <!-- Aside -->
+            <div class="col-12 col-md-12 col-lg-5 brazo">
+                <h2 class="h3">Featured Players</h2>
+                <div class="card brazo__caja" style="width: auto;">
+                    <div class="card-body">
+                        <h5 class="card-title">Cristiano Ronaldo</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Portugal</h6>
+                        <p class="card-text">Club<span class="float-end">Manchester United</span></p>
+                        <p class="card-text">Position<span class="float-end">Forward</span></p>
+                        <p class="card-text">Date of Birth<span class="float-end">05/02/1985 (37)</span></p>
+                        <hr>
+                        <p class="card-text">Appearances<span class="float-end">215</span></p>
+                        <p class="card-text">Goals<span class="float-end">92</span></p>
+                        <p class="card-text">Wins<span class="float-end">141</span></p>
+                        <p class="card-text">Losses<span class="float-end">34</span></p>
+                        <a href="#" class="float-end">Player Profile</a>
+                    </div>
+                </div>
+                <div class="card brazo__caja--modifier" style="width: auto;">
+                    <div class="card-body">
+                        <h5 class="card-title">Mohamed Salah</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Egypt</h6>
+                        <p class="card-text">Club<span class="float-end">Liverpool</span></p>
+                        <p class="card-text">Position<span class="float-end">Forward</span></p>
+                        <p class="card-text">Date of Birth<span class="float-end">15/06/1992 (29)</span></p>
+                        <hr>
+                        <p class="card-text">Appearances<span class="float-end">179</span></p>
+                        <p class="card-text">Goals<span class="float-end">113</span></p>
+                        <p class="card-text">Wins<span class="float-end">120</span></p>
+                        <p class="card-text">Losses<span class="float-end">23</span></p>
+                        <a href="#" class="float-end">Player Profile</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!-- Galeria -->
+    <section class="container galeria">
+        <h2 class="h3">Photo Galleries</h2>
+        <div class="row">
+            <div class="card text-white galeria__box">
+                <img src="images/galery/pogba.webp" class="card-img" alt="Paul Pogba">
+                <div class="card-img-overlay">
+                    <h5 class="h2">What we learned in Matchweek 23</h5>
+                    <p class="card-text">Find out how Paul Pogba joined an exclusive club and why Southampton beat
+                        Tottenham.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row d-none d-sm-none d-lg-flex">
+            <img class="img-fluid col-lg-6 galeria__fotos" src="images/galery/antonio.webp" alt="Antonio West Ham">
+            <img id="photo2" class="img-fluid col-lg-6 galeria__fotos" src="images/galery/brentford.webp"
+                alt="Brentford">
+            <img id="photo3" class="img-fluid col-lg-6 galeria__fotos" src="images/galery/lacazette.webp"
+                alt="Lacazette">
+            <img id="photo4" class="img-fluid col-lg-6 galeria__fotos" src="images/galery/royal.webp" alt="E Royal">
+        </div>
+        <p class="text-end"><a class="text-decoration-none" href="#">More Photos</a></p>
+    </section>
+    <!-- Footer -->
+    <section class="container footer">
+        <div class="row footer__links">
+            <h3 class="h6">Clubs</h3>
+            <nav class="nav flex-column col-6 col-md-3">
+                <a class="nav-link" href="#">Arsenal</a>
+                <a class="nav-link" href="#">Aston Villa</a>
+                <a class="nav-link" href="#">Brentford</a>
+                <a class="nav-link" href="#">Brighton</a>
+                <a class="nav-link" href="#">Burnley</a>
+            </nav>
+            <nav class="nav flex-column col-6 col-md-3">
+                <a class="nav-link" href="#">Chelsea</a>
+                <a class="nav-link" href="#">Crystal Palace</a>
+                <a class="nav-link" href="#">Everton</a>
+                <a class="nav-link" href="#">Leeds United</a>
+                <a class="nav-link" href="#">Leicester City</a>
+            </nav>
+            <nav class="nav flex-column col-6 col-md-3">
+                <a class="nav-link" href="#">Liverpool</a>
+                <a class="nav-link" href="#">Manchester United</a>
+                <a class="nav-link" href="#">Manchester City</a>
+                <a class="nav-link" href="#">Newcastle United</a>
+                <a class="nav-link" href="#">Norwich City</a>
+            </nav>
+            <nav class="nav flex-column col-6 col-md-3">
+                <a class="nav-link" href="#">Southampton</a>
+                <a class="nav-link" href="#">Tottenham Hotspur</a>
+                <a class="nav-link" href="#">Watford</a>
+                <a class="nav-link" href="#">West Ham United</a>
+                <a class="nav-link" href="#">Wolverhampton</a>
+            </nav>
+        </div>
+        <div class="row footer__links--modifier">
+            <div class="col-6 col-md-3">
+                <h3 class="h6">Premier League</h3>
+                <nav class="nav flex-column">
+                    <a class="nav-link" href="#">Jugadores</a>
+                    <a class="nav-link" href="#">Entrenadores</a>
+                    <a class="nav-link" href="#">Fixture</a>
+                </nav>
+            </div>
+            <div class="col-6 col-md-3">
+                <h3 class="h6">Social</h3>
+                <nav class="nav flex-column">
+                    <a class="nav-link" href="#">PL Twitter</a>
+                    <a class="nav-link" href="#">PL Facebook</a>
+                    <a class="nav-link" href="#">PL Instagram</a>
+                    <a class="nav-link" href="#">PL Youtube</a>
+                </nav>
+            </div>
+            <div class="col-6 col-md-3">
+                <h3 class="h6">Ayuda</h3>
+                <nav class="nav flex-column">
+                    <a class="nav-link" href="#">Soporte</a>
+                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="#">Termino y Condiciones</a>
+                </nav>
+            </div>
+            <div class="col-6 col-md-3">
+                <h3 class="h6">Ayuda</h3>
+                <nav class="nav flex-column">
+                    <a class="nav-link" href="#">Soporte</a>
+                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="#">Termino y Condiciones</a>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- Copy -->
+    <section class="container copy">
+        <div class="row">
+            <div class="nav col-12 col-lg-9 text-nowrap">
+              <li class="nav-link fs-6">&copy; Proyecto CH Brian Michel Ibañez 2022</li>
+              <li class="nav-link fs-6">Terms & Conditions</li>
+              <li class="nav-link fs-6">Policies</li>
+              <li class="nav-link fs-6"><a class="text-decoration-none" href="index.html">Back To Top</a></li>
+            </div>
+        </div>
+        <img class="img-fluid row m-auto" src="images/logo-footer.png" alt="Logo Premier League">
+    </section>
+    <!-- JS de Bootstrap local -->
+    <script src="bootstrap local/js/bootstrap.js"></script>
+</body>
+
+</html>
