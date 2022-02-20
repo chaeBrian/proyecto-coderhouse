@@ -2,284 +2,472 @@
 
 // Paleta de colores
 $color1: rgb(235, 235, 235);
-$color2: rgb(255, 247, 0);
+$color2: rgb(0, 252, 84);
+$color3: crimson;
+$my__red: rgba(255, 0, 0, 0.75);
+$my__blue: rgba(0, 0, 255, 0.75);
+$my__green: rgba(0, 255, 0, 0.75);
+$bgcolor: rgba(0, 0, 0, 0.542);
+$bgcolor2: rgba(0, 0, 0, 0.548);
+$bgcolor3: rgb(17, 17, 17);
 
+//Extends
+%btopbright{
+    border-left: 0.1em transparent $color1 !important;
+    border-top: 0.1em solid $color1 !important;
+    border-bottom: 0.1em transparent $color1 !important;
+    border-right: 0.1em solid $color1 !important;
+}
+%decocolor1{
+    color: $color1;
+    text-decoration: overline !important;
+}
+%glitch-fc{
+    display: inline;
+    cursor: pointer;
+    animation: glitch 650ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 65%);
+    transform: translate(-0.0825em, -0.0015em);
+    opacity: 0.8;
+    text-decoration: line-through 0.01em;
+}
+%glitch-lc{
+    display: inline;
+    cursor: pointer;
+    animation: glitch 375ms infinite;
+    clip-path: polygon(0% 70%, 100% 46%, 80% 100%, 50% 100%);
+    transform: translate(0.045em, 0.0685em);
+    opacity: 0.8;
+}
+%glitch-hover{
+    color: $color1 !important;
+    position: relative;
+    text-shadow: 0.05em 0 0 $my__red,
+      -0.025em -0.05em 0 $my__green,
+      0.025em 0.05em 0 $my__blue;
+  
+    animation: glitch 500ms infinite;
+}
+%brazo-enlace{
+    border: 0.1em transparent $color1 !important;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0;
+    border-top: 0.1em solid $color1 !important;
+    p{
+        margin-bottom: 0.5vw;
+    }
+    h5{
+        margin-top: 10em;
+    }
+    a{
+        font-size: 1rem;
+        position: relative;
+        color: $color2;
+        text-decoration: none;
+        &:hover{
+            @extend %glitch-hover;
+        }
+        span{
+            color: $color1;
+            position: absolute;
+            top: 0.0300em;
+            left: -0.0400em;
+        }
+    }
+    a:hover span:first-child{
+        @extend %glitch-fc;
+    }
+    a:hover span:last-child{
+        @extend %glitch-lc;
+    }
+}
+
+//Mixin
+@mixin h5Estructura ($margen, $fuentesz, $margenizq){
+    margin: $margen;
+    font-size: $fuentesz;
+    margin-left: $margenizq;
+}
+@mixin galeryPhotoBorder ($valor1, $valor2, $valor3, $valor4){
+    border-left: 0.1em $valor1 $color1 !important;
+    border-top: 0.1em $valor2 $color1 !important;
+    border-bottom: 0.1em $valor3 $color1 !important;
+    border-right: 0.1em $valor4 $color1 !important;
+    border-radius: 0vw;
+}
+
+//Glitch
+.spanOculto{
+    display: none;
+}
+.nav-item{
+    font-size: 1rem;
+    position: relative;
+    .nav-link{
+        color: $color1;
+        text-transform: uppercase;
+        &hover{
+            @extend %glitch-hover
+        }
+        &:active{
+            color: none !important;
+        }
+        &:visited{
+            color: none !important;
+        }
+    }
+    span{
+        color: $color1;
+        position: absolute;
+        top: 0.5100em;
+        left: 0.4900em;
+    }
+}
+.nav-link:hover span:first-child{
+    @extend %glitch-fc;
+}
+.nav-link:hover span:last-child {
+    @extend %glitch-lc;
+}
+@keyframes glitch {
+    0% {
+      text-shadow: 0.07em 0 0 $my__red,
+        -0.07em -0.025em 0 $my__green,
+        -0.025em 0.09em 0 $my__blue;
+    }
+    14% {
+      text-shadow: 0.07em 0 0 $my__red,
+        -0.07em -0.025em 0 $my__green,
+        -0.025em 0.09em 0 $my__blue;
+    }
+    15% {
+      text-shadow: -0.07em -0.025em 0 $my__red,
+        0.025em 0.025em 0 $my__green,
+        -0.07em -0.09em 0 $my__blue;
+    }
+    49% {
+      text-shadow: -0.07em -0.025em 0 $my__red,
+        0.025em 0.025em 0 $my__green,
+        -0.07em -0.09em 0 $my__blue;
+    }
+    50% {
+      text-shadow: 0.025em 0.07em 0 $my__red,
+        0.2em 0 0 $my__green, 0 -0.09em 0 $my__blue;
+    }
+    99% {
+      text-shadow: 0.025em 0.07em 0 $my__red,
+        0.02em 0 0 $my__green, 0 -0.09em 0 $my__blue;
+    }
+    100% {
+      text-shadow: -0.095em 0 0 $my__red,
+        -0.095em -0.065em 0 $my__green,
+        -0.096em -0.09em 0 $my__blue;
+    }
+}
+//Glitch
 
 //Header
 body{
-    background-color: rgb(17, 17, 17);
+    background-color: $bgcolor3;
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
-}
-.header{
-    nav{
-        ul{
-            li{
-                .nav-link{
-                    margin: 0;
-                    padding: 0px 10px;
-                    background: linear-gradient(to top, $color2, $color2);
-                    background-size: 0% 100%;
-                    height: 50%;
-                    background-repeat: no-repeat;
-                    color: $color1;
-                    transition: 0.8s;
-                    &:hover{
-                        background-size: 100% 100%;
-                        color: gray !important;
-                        transition: 0.8s;
+    .header{
+        position: fixed;
+        z-index: 2;
+        margin-top: -10vw;
+        background-color: $bgcolor3;
+        width: 100% !important;
+        max-width: none;
+        nav{
+            img{
+                width: 15%;
+            }
+            .header__menu{
+                li{
+                    margin: 0 1.1vw;
+                    ul{
+                        background-color: $bgcolor3;
+                        border: none;
+                        li{
+                            a{
+                                color: $color1 !important;
+                                &:hover{
+                                    background-color: $bgcolor3;
+                                    @extend %glitch-hover;
+                                }
+                            }
+                        }
                     }
-                    &:active{
-                        color: none;
-                    }
-                    &:visited{
-                        color: none;
-                    }
+                }
+            }
+            .header__boton{
+                &:active{
+                    border: 2px solid $color2;
                 }
             }
         }
     }
 }
-.header__menu{
-    li{
-        margin: 0 1.1vw;
-    }
-}
-.header__boton{
-    &:active{
-        border: 2px solid $color2;
-    }
-}
-
-
-//Main
-.home{
-    border-left: 0.1em solid white !important;
-    border-top: 0.1em solid white !important;
-    border-bottom: 0.1em transparent white !important;
-    border-right: 0.1em transparent white !important;
-    padding: 2vw;
-    margin-top: 2vw;
-}
-.home__carousel{
-    div{
-        div{
-            background-color: rgba(0, 0, 0, 0.542);
+@media (max-width: 992px){
+    body{
+        .header{
+            margin-top: -13vw;
+            nav{
+                img{
+                    width: 10%;
+                }
+            }
+        }
+        .home{
+            margin-top: 14vw;
         }
     }
 }
-.home__info{
-    h1{
-        margin: 0;
-        margin-top: 1vw;
-        margin-left: 0.5vw;
+
+//Main
+.home{
+    border-left: 0.1em solid $color1 !important;
+    border-top: 0.1em solid $color1  !important;
+    border-bottom: 0.1em transparent $color1  !important;
+    border-right: 0.1em transparent $color1 !important;
+    padding: 2vw;
+    margin-top: 10vw;
+    .carousel{
+        .carousel-indicators{
+            z-index: 1 !important;
+        }
+        .home__carousel{
+            div{
+                div:first-child{
+                    .carousel-indicators{
+                        z-index: 0 !important;
+                    }
+                }
+                div:last-child{
+                    background-color: $bgcolor;
+                }
+            }
+            .carousel-control-prev{
+                z-index: 0;
+            }
+        }
     }
-    p{
-        margin: 0;
-        margin-top: 0.5vw;
-        a{
-            color: $color2;
-            transition: 1s;
-            &:hover{
-                color: $color1;
-                text-decoration: overline !important;
+    .home__info{
+        h1{
+            margin: 0;
+            margin-top: 1vw;
+            margin-left: 0.5vw;
+        }
+        p{
+            margin: 0;
+            margin-top: 0.5vw;
+            a{
+                font-size: 1rem;
+                position: relative;
+                color: $color2;
+                &:hover{
+                    @extend %glitch-hover;
+                }
+                span{
+                    color: $color1;
+                    position: absolute;
+                    top: 0.0800em;
+                    left: 0.0800em;
+                }
+            }
+            a:hover span:first-child{
+                @extend %glitch-fc;
+            }
+            a:hover span:last-child {
+                @extend %glitch-lc;
             }
         }
     }
 }
-
 
 //Noticias
 .noticias{
     margin-top: 2vw;
-}
-.noticias__contenedor{
-    max-width: 800px !important;
-    background-color: transparent !important;
-    border-left: 0.1em transparent white !important;
-    border-top: 0.1em solid white !important;
-    border-bottom: 0.1em transparent white !important;
-    border-right: 0.1em solid white !important;
-    border-radius: 0vw;
-}
-.noticias__imagen{
-    margin: 0.5vw 0;
-}
-.noticias__info{
-    cursor: pointer;
-    transition: a 1.5s;
-    margin: 0vw;
-    color: $color1;
-    display: flex;
-    align-items: center;
-    p{
-        a{
-            color: $color1;
-            transition: 1s;
+    article{
+        div:first-child{
+            .noticias__contenedor{
+                max-width: 800px !important;
+                background-color: transparent !important;
+                @extend %btopbright;
+                border-radius: 0vw;
+                .noticias__imagen{
+                    margin: 0.5vw 0;
+                }
+                .noticias__info{
+                    cursor: pointer;
+                    transition: a 1.5s;
+                    margin: 0vw;
+                    color: $color1;
+                    display: flex;
+                    align-items: center;
+                    p{
+                        a{
+                            color: $color1;
+                            transition: 1s;
+                        }
+                    }
+                    &:hover{
+                        a{
+                            color: $color2;
+                        }
+                    }
+                    div{
+                        padding: 1vw;
+                        h5{
+                            @include h5Estructura(1vw 0, 0.5em, 1vw);
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+            .noticias__verMas{
+                margin-right: 2vw;
+                a{
+                    font-size: 1rem;
+                    position: relative;
+                    color: $color2;
+                    &:hover{
+                        @extend %glitch-hover;
+                    }
+                    span{
+                        color: $color1;
+                        position: absolute;
+                        top: 0.0300em;
+                        left: -0.0400em;
+                    }
+                }
+                a:hover span:first-child{
+                    @extend %glitch-fc;
+                }
+                a:hover span:last-child{
+                    @extend %glitch-lc;
+                }
+            }
         }
-    }
-    &:hover{
-        a{
-            color: $color2;
-        }
-    }
-    div{
-        padding: 1vw;
-        h5{
-            margin: 1vw 0vw;
-            font-size: 0.5em;
-            margin-left: 1vw;
-            font-style: italic;
-        }
-    }
-}
-.noticias__verMas{
-    a{
-        color: $color2;
-        margin-right: 5em;
-        transition: 1s;
-        &:hover{
-            color: $color1;
-            text-decoration: overline !important;
-        }
-    }
-}
-//noticias/brazo
-.brazo__caja{
-    border: 0.1em transparent white !important;
-    background-color: transparent;
-    background-image: url(../images/png/cr7.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 0;
-    border-top: 0.1em solid white !important;
-    p{
-        margin-bottom: 0.5vw;
-    }
-    h5{
-        margin-top: 10em;
-    }
-    a{
-        margin-top: 2vw;
-        text-decoration: none;
-        color: $color2;
-        transition: 1s;
-        &:hover{
-            color: $color1;
-            text-decoration: overline;
+        div:last-child{
+            .brazo__caja{
+                background-image: url(../images/png/cr7.png);
+                @extend %brazo-enlace
+            }
+            .brazo__caja--modifier{
+                background-image: url(../images/png/salah.png);
+                @extend %brazo-enlace;
+            }
         }
     }
 }
-.brazo__caja--modifier{
-    border: 0.1em transparent white !important;
-    background-color: transparent;
-    background-image: url(../images/png/salah.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 0;
-    border-top: 0.1em solid white !important;
-    p{
-        margin-bottom: 0.5vw;
-    }
-    h5{
-        margin-top: 10em;
-    }
-    a{
-        margin-top: 2vw;
-        text-decoration: none;
-        color: $color2;
-        transition: 1s;
-        &:hover{
-            color: $color1;
-            text-decoration: overline;
-        }
-    }
-}
-
 
 //Galeria
 .galeria{
     margin-top: 2vw;
-    .galeria__box{
-        background-color: transparent !important;
-        border: none;
-        border-left: 0.1em transparent white !important;
-        border-top: 0.1em solid white !important;
-        border-bottom: 0.1em transparent white !important;
-        border-right: 0.1em solid white !important;
-        border-radius: 0vw;
-        img{
-            padding: 10px 0;
-        }
-        div{
-            background-color: rgba(0, 0, 0, 0.548);
-            height: 10rem;
-            h5{
-                padding: 1rem;
+    div{
+        .galeria__box{
+            background-color: transparent !important;
+            border: none;
+            @extend %btopbright;
+            border-radius: 0vw;
+            img{
+                padding: 10px 0;
+            }
+            div{
+                background-color: $bgcolor2;
+                height: 10rem;
+                h5{
+                    padding: 1rem;
+                }
             }
         }
     }
-    .galeria__fotos{
-        padding: 10px;
+    div{
+        .galeria__fotos{
+            padding: 10px;
+        }
+        #photo2{
+            @include galeryPhotoBorder(solid, solid, transparent, transparent);
+        }
+        #photo3{
+            @include galeryPhotoBorder(solid, solid, solid, transparent);
+        }
+        #photo4{
+            @include galeryPhotoBorder(transparent, transparent, solid, transparent);
+        }
     }
     p{
         margin: 1rem 0;
         a{
+            font-size: 1rem;
+            position: relative;
             color: $color2;
-            transition: 1s;
             &:hover{
+                @extend %glitch-hover;
+            }
+            span{
                 color: $color1;
-                text-decoration: overline !important;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+        a:hover span:first-child{
+            @extend %glitch-fc;
+        }
+        a:hover span:last-child {
+            @extend %glitch-lc;
+        }
+    }
+}
+
+//Footer
+.footer{
+    @include galeryPhotoBorder(transparent, solid, transparent, transparent);
+    margin-top: 5rem;
+    .footer__links{
+        margin: 3rem;
+        nav{
+            a{
+                font-size: 1rem;
+                position: relative;
+                color: $color2;
+                &:hover{
+                    @extend %glitch-hover;
+                }
+                a:hover span:first-child{
+                    @extend %glitch-fc;
+                }
+                a:hover span:last-child {
+                    @extend %glitch-lc;
+                }
+            }
+        }
+    }
+    .footer__links--modifier{
+        margin: 0 3rem;
+        margin-bottom: 3rem;
+        nav{
+            a{
+                font-size: 1rem;
+                position: relative;
+                color: $color2;
+                &:hover{
+                    @extend %glitch-hover;
+                }
+                a:hover span:first-child{
+                    @extend %glitch-fc;
+                }
+                a:hover span:last-child {
+                    @extend %glitch-lc;
+                }
             }
         }
     }
 }
-#photo2{
-    border-left: 0.1em solid white !important;
-    border-top: 0.1em solid white !important;
-    border-bottom: 0.1em transparent white !important;
-    border-right: 0.1em transparent white !important;
-    border-radius: 0vw;
-}
-#photo3{
-    border-left: 0.1em solid white !important;
-    border-top: 0.1em solid white !important;
-    border-bottom: 0.1em solid white !important;
-    border-right: 0.1em transparent white !important;
-    border-radius: 0vw;
-}
-#photo4{
-    border-left: 0.1em transparent white !important;
-    border-top: 0.1em transparent white !important;
-    border-bottom: 0.1em solid white !important;
-    border-right: 0.1em transparent white !important;
-    border-radius: 0vw;
-}
 
-
-//Footer
-.footer{
-    border-left: 0.1em transparent white !important;
-    border-top: 0.1em solid white !important;
-    border-bottom: 0.1em transparent white !important;
-    border-right: 0.1em transparent white !important;
-    border-radius: 0vw;
-    margin-top: 10rem;
-    a{
-        color: $color2;
-        transition: all 1s;
-        &:hover{
-            color: $color1;
-            text-decoration: line-through 0.1rem double crimson !important;
-        }
-    }
-}
-.footer__links{
-    margin: 3rem;
-}
-.footer__links--modifier{
-    margin: 0 3rem;
-    margin-bottom: 3rem;
-}
 //copy
 .copy{
     div{
@@ -287,6 +475,7 @@ body{
             justify-content: center;
             margin: auto;
             li{
+                font-size: 0.6em;
                 color: $color1;
                 &:hover{
                     color: $color1;
