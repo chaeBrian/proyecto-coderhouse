@@ -3,13 +3,44 @@
 // Paleta de colores
 $color1: rgb(235, 235, 235);
 $color2: rgb(0, 252, 84);
-$color3: crimson;
 $my__red: rgba(255, 0, 0, 0.75);
 $my__blue: rgba(0, 0, 255, 0.75);
 $my__green: rgba(0, 255, 0, 0.75);
 $bgcolor: rgba(0, 0, 0, 0.542);
 $bgcolor2: rgba(0, 0, 0, 0.548);
 $bgcolor3: rgb(17, 17, 17);
+
+$colors: (
+    "primary": $color1,
+    "secondaty": $color2,
+    "rojo": rgba(255, 0, 0, 0.75),
+    "blue": rgba(0, 0, 255, 0.75),
+    "green": rgba(0, 255, 0, 0.75),
+    "bg-color-primary": rgba(0, 0, 0, 0.542),
+    "bg-color-secondary": rgba(0, 0, 0, 0.548),
+    "bg-color-third": rgb(17, 17, 17),
+    "arsenal": rgba(255, 0, 0, 0.666),
+    "aston": rgba(255, 0, 55, 0.659),
+    "brentford": rgba(255, 0, 0, 0.597),
+    "brighton": rgba(0, 255, 208, 0.481),
+    "burnley": rgba(255, 0, 111, 0.337),
+    "chelsea": rgba(0, 60, 255, 0.645),
+    "crystal": rgba(85, 125, 255, 0.645),
+    "everton": rgba(37, 69, 175, 0.645),
+    "leeds": rgba(143, 133, 60, 0.522),
+    "leicester": rgba(11, 36, 119, 0.734),
+    "liverpool": rgba(213, 50, 85, 0.734),
+    "city": rgba(3, 171, 209, 0.734),
+    "united": rgba(136, 8, 8, 0.665),
+    "newcastle": rgba(85, 85, 85, 0.665),
+    "norwich": rgba(39, 167, 71, 0.665),
+    "southampton": rgba(218, 84, 84, 0.665),
+    "spurs": rgba(80, 80, 80, 0.816),
+    "watford": rgba(169, 145, 48, 0.816),
+    "westham": rgba(141, 43, 113, 0.816),
+    "wolves": rgba(255, 168, 7, 0.624),
+);
+
 
 //Extends
 %btopbright{

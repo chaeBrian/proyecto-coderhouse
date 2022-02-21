@@ -268,3 +268,203 @@ body {
       color: #ebebeb; }
     .copy div div li a {
       color: #ebebeb; }
+
+.clubs__banner {
+  border-left: 0.1em transparent #ebebeb !important;
+  border-top: 0.1em solid #ebebeb !important;
+  border-bottom: 0.1em transparent #ebebeb !important;
+  border-right: 0.1em transparent #ebebeb !important;
+  padding: 2vw;
+  margin-top: 10vw; }
+  .clubs__banner h1 {
+    margin-left: 3vw; }
+
+.clubs div .clubs__box {
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: none;
+  border-radius: 0em;
+  padding: 0em; }
+  .clubs div .clubs__box .row div:last-child .card-body {
+    padding: 8px;
+    margin: 8px;
+    border-left: 0.1em transparent #ebebeb !important;
+    border-top: 0.1em solid #ebebeb !important;
+    border-bottom: 0.1em transparent #ebebeb !important;
+    border-right: 0.1em solid #ebebeb !important;
+    border-radius: 0vw;
+    background-color: rgba(0, 0, 0, 0.624); }
+
+.clubs div .clubs__box:hover #arsenal {
+  background-color: rgba(255, 0, 0, 0.666);
+  font-weight: bold; }
+
+.clubs div .clubs__box:hover #aston {
+  background-color: rgba(255, 0, 55, 0.659);
+  font-weight: bold; }
+
+.clubs div .clubs__box:hover #brentford {
+  background-color: rgba(255, 0, 0, 0.597);
+  font-weight: bold; }
+
+.clubs div .clubs__box:hover #brighton {
+  background-color: rgba(0, 255, 208, 0.481);
+  font-weight: bold; }
+
+.clubs div .clubs__box:hover #burnley {
+  background-color: rgba(255, 0, 111, 0.337);
+  font-weight: bold; }
+
+.clubs div .clubs__box:hover #chelsea {
+  background-color: rgba(0, 60, 255, 0.645);
+  font-weight: bold; }
+
+.clubs div .clubs__box:hover #crystal {
+  background-color: rgba(85, 125, 255, 0.645);
+  font-weight: bold; }
+
+.clubs div .clubs__box:hover #everton {
+  background-color: rgba(37, 69, 175, 0.645);
+  font-weight: bold; }
+
+.clubs div .clubs__box:hover #leeds {
+  background-color: rgba(143, 133, 60, 0.522);
+  font-weight: bold; }
+
+.clubs div .clubs__box:hover #leicester {
+  background-color: rgba(11, 36, 119, 0.734);
+  font-weight: bold; }
+
+.clubs div .clubs__box:hover #liverpool {
+  background-color: rgba(213, 50, 85, 0.734);
+  font-weight: bold; }
+
+.clubs div .clubs__box:hover #city {
+  background-color: rgba(3, 171, 209, 0.734);
+  font-weight: bold; }
+
+.clubs div .clubs__box:hover #united {
+  background-color: rgba(136, 8, 8, 0.665);
+  font-weight: bold; }
+
+.clubs div .clubs__box:hover #newcastle {
+  background-color: rgba(85, 85, 85, 0.665);
+  font-weight: bold; }
+
+.clubs div .clubs__box:hover #norich {
+  background-color: rgba(39, 167, 71, 0.665);
+  font-weight: bold; }
+
+.clubs div .clubs__box:hover #soton {
+  background-color: rgba(218, 84, 84, 0.665);
+  font-weight: bold; }
+
+.clubs div .clubs__box:hover #spurs {
+  background-color: rgba(80, 80, 80, 0.816);
+  font-weight: bold; }
+
+.clubs div .clubs__box:hover #watford {
+  background-color: rgba(169, 145, 48, 0.816);
+  font-weight: bold; }
+
+.clubs div .clubs__box:hover #wham {
+  background-color: rgba(141, 43, 113, 0.816);
+  font-weight: bold; }
+
+.clubs div .clubs__box:hover #wolves {
+  background-color: rgba(255, 168, 7, 0.624);
+  font-weight: bold; }
+
+@media (max-width: 992px) {
+  .clubs__banner {
+    margin-top: 13vw; }
+  .clubs .clubs__box {
+    width: 100%; } }
+
+@media (min-width: 993px) {
+  .clubs .clubs__box {
+    width: 40%; } }
+
+.about article h2 {
+  color: #00fc54; }
+
+.contact h2 {
+  color: #00fc54; }
+
+.contact h5 {
+  background-color: #00fc54;
+  padding: 0.5em;
+  color: #111111;
+  font-weight: bold; }
+
+.contact p {
+  width: 80%; }
+  .contact p ol {
+    margin-left: 2em !important; }
+
+.contact__form {
+  margin-top: 3em; }
+  .contact__form form {
+    width: 50%; }
+    .contact__form form .form-check input {
+      background-color: #111111;
+      border: 0.1em solid #ebebeb;
+      border-radius: 0; }
+    .contact__form form button {
+      width: 30%;
+      background-color: #111111;
+      border: none;
+      border-left: 0.1em solid #ebebeb !important;
+      border-top: 0.1em transparent #ebebeb !important;
+      border-bottom: 0.1em solid #ebebeb !important;
+      border-right: 0.1em transparent #ebebeb !important;
+      border-radius: 0vw; }
+      .contact__form form button:hover {
+        background-color: #00fc54;
+        color: #111111;
+        font-weight: bold; }
+
+@media (max-width: 992px) {
+  .contact__form form {
+    width: 100%; } }
+
+.login .container {
+  border-left: 0.1em solid #ebebeb !important;
+  border-top: 0.1em solid #ebebeb !important;
+  border-bottom: 0.1em transparent #ebebeb !important;
+  border-right: 0.1em transparent #ebebeb !important;
+  border-radius: 0vw; }
+  .login .container .card {
+    background-color: #111111;
+    border-radius: 0 !important; }
+    .login .container .card .card-body .form-outline .form-control {
+      border-radius: 0; }
+    .login .container .card .card-body .login__botonIngreso {
+      color: #ebebeb;
+      border-bottom: 0.1em solid #ebebeb;
+      border-radius: 0; }
+      .login .container .card .card-body .login__botonIngreso:hover {
+        background-color: #00fc54;
+        color: #111111;
+        font-weight: bold; }
+    .login .container .card .card-body .form-check input {
+      background-color: #111111;
+      border: solid 0.1em #ebebeb;
+      border-radius: 0; }
+      .login .container .card .card-body .form-check input:hover {
+        background-color: #00fc54; }
+    .login .container .card .card-body .login__botonGg {
+      color: #ebebeb;
+      border: 0.1em solid #f84848;
+      border-radius: 0;
+      margin-bottom: 0.5em; }
+      .login .container .card .card-body .login__botonGg:hover {
+        background-color: #f84848; }
+    .login .container .card .card-body .login__botonFb {
+      color: #ebebeb;
+      border: 0.1em solid #6565fd;
+      border-radius: 0; }
+      .login .container .card .card-body .login__botonFb:hover {
+        background-color: #6565fd; }

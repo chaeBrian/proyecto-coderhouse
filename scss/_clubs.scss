@@ -1,0 +1,133 @@
+.clubs__banner{
+    border-left: 0.1em transparent $color1 !important;
+    border-top: 0.1em solid $color1  !important;
+    border-bottom: 0.1em transparent $color1  !important;
+    border-right: 0.1em transparent $color1 !important;
+    padding: 2vw;
+    margin-top: 10vw;
+    h1{
+        margin-left: 3vw;
+    }
+}
+
+.clubs{
+    div{
+        .clubs__box{
+            cursor: pointer;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border: none;
+            border-radius: 0em;
+            padding: 0em;
+            .row{
+                div:last-child{
+                    .card-body{
+                        padding: 8px;
+                        margin: 8px;
+                        @include galeryPhotoBorder(transparent, solid, transparent, solid);
+                        background-color: rgba(0, 0, 0, 0.624);
+                    }
+                }
+            }
+        }
+        .clubs__box:hover #arsenal{
+            background-color: map-get($colors , "arsenal");
+            font-weight: bold;
+        }
+        .clubs__box:hover #aston{
+            background-color: map-get($colors , "aston");
+            font-weight: bold;
+        }
+        .clubs__box:hover #brentford{
+            background-color: map-get($colors , "brentford");
+            font-weight: bold;
+        }
+        .clubs__box:hover #brighton{
+            background-color: map-get($colors , "brighton");
+            font-weight: bold;
+        }
+        .clubs__box:hover #burnley{
+            background-color: map-get($colors , "burnley");
+            font-weight: bold;
+        }
+        .clubs__box:hover #chelsea{
+            background-color: map-get($colors , "chelsea");
+            font-weight: bold;
+        }
+        .clubs__box:hover #crystal{
+            background-color: map-get($colors , "crystal");
+            font-weight: bold;
+        }
+        .clubs__box:hover #everton{
+            background-color: map-get($colors , "everton");
+            font-weight: bold;
+        }
+        .clubs__box:hover #leeds{
+            background-color: map-get($colors , "leeds");
+            font-weight: bold;
+        }
+        .clubs__box:hover #leicester{
+            background-color: map-get($colors , "leicester");
+            font-weight: bold;
+        }
+        .clubs__box:hover #liverpool{
+            background-color: map-get($colors , "liverpool");
+            font-weight: bold;
+        }
+        .clubs__box:hover #city{
+            background-color: map-get($colors , "city");
+            font-weight: bold;
+        }
+        .clubs__box:hover #united{
+            background-color: map-get($colors , "united");
+            font-weight: bold;
+        }
+        .clubs__box:hover #newcastle{
+            background-color: map-get($colors , "newcastle");
+            font-weight: bold;
+        }
+        .clubs__box:hover #norich{
+            background-color: map-get($colors , "norwich");
+            font-weight: bold;
+        }
+        .clubs__box:hover #soton{
+            background-color: map-get($colors , "southampton");
+            font-weight: bold;
+        }
+        .clubs__box:hover #spurs{
+            background-color: map-get($colors , "spurs");
+            font-weight: bold;
+        }
+        .clubs__box:hover #watford{
+            background-color: map-get($colors , "watford");
+            font-weight: bold;
+        }
+        .clubs__box:hover #wham{
+            background-color: map-get($colors , "westham");
+            font-weight: bold;
+        }
+        .clubs__box:hover #wolves{
+            background-color: map-get($colors , "wolves");
+            font-weight: bold;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .clubs__banner{
+        margin-top: 13vw;
+    }
+    .clubs{
+        .clubs__box{
+            width: 100%;
+        }
+    }
+}
+@media (min-width: 993px) {
+    .clubs{
+        .clubs__box{
+            width: 40%;
+        }
+    }
+}

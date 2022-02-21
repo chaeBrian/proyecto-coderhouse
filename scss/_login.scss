@@ -1,0 +1,53 @@
+.login{
+    .container{
+        @include galeryPhotoBorder(solid, solid, transparent, transparent);
+        .card{
+            background-color: $bgcolor3;
+            border-radius: 0 !important;
+            .card-body{
+                .form-outline{
+                    .form-control{
+                        border-radius: 0;
+                    }
+                }
+                .login__botonIngreso{
+                    color: $color1;
+                    border-bottom: 0.1em solid $color1;
+                    border-radius: 0;
+                    &:hover{
+                        background-color: $color2;
+                        color: $bgcolor3;
+                        font-weight: bold;
+                    }
+                }
+                .form-check{
+                    input{
+                        background-color: $bgcolor3;
+                        border: solid 0.1em $color1;
+                        border-radius: 0;
+                        &:hover{
+                            background-color: $color2;
+                        }
+                    }
+                }
+                .login__botonGg{
+                    color: $color1;
+                    border: 0.1em solid rgb(248, 72, 72);
+                    border-radius: 0;
+                    margin-bottom: 0.5em;
+                    &:hover{
+                        background-color: rgb(248, 72, 72);
+                    }
+                }
+                .login__botonFb{
+                    color: $color1;
+                    border: 0.1em solid rgb(101, 101, 253);
+                    border-radius: 0;
+                    &:hover{
+                        background-color: rgb(101, 101, 253); 
+                    }
+                }
+            }
+        }
+    }
+}

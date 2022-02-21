@@ -1,0 +1,48 @@
+.contact{
+    h2{
+        color: $color2;
+    }
+    h5{
+        background-color: $color2;
+        padding: 0.5em;
+        color: $bgcolor3;
+        font-weight: bold;
+    }
+    p{
+        width: 80%;
+        ol{
+            margin-left: 2em !important;
+        }
+    }
+}
+.contact__form{
+    margin-top: 3em;
+    form{
+        width: 50%;
+        .form-check{
+            input{
+                background-color: $bgcolor3;
+                border: 0.1em solid $color1;
+                border-radius: 0;
+            }
+        }
+        button{
+            width: 30%;
+            background-color: $bgcolor3;
+            border: none;
+            @include galeryPhotoBorder( solid, transparent, solid, transparent);
+            &:hover{
+                background-color: $color2;
+                color: $bgcolor3;
+                font-weight: bold;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .contact__form{
+        form{
+            width: 100%;
+        }
+    }
+}
