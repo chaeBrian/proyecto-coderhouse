@@ -9,16 +9,18 @@ $my__green: rgba(0, 255, 0, 0.75);
 $bgcolor: rgba(0, 0, 0, 0.542);
 $bgcolor2: rgba(0, 0, 0, 0.548);
 $bgcolor3: rgb(17, 17, 17);
+$bgcolor4: rgba(0, 0, 0, 0.624);
 
 $colors: (
     "primary": $color1,
-    "secondaty": $color2,
-    "rojo": rgba(255, 0, 0, 0.75),
-    "blue": rgba(0, 0, 255, 0.75),
-    "green": rgba(0, 255, 0, 0.75),
-    "bg-color-primary": rgba(0, 0, 0, 0.542),
-    "bg-color-secondary": rgba(0, 0, 0, 0.548),
-    "bg-color-third": rgb(17, 17, 17),
+    "secundary": $color2,
+    "rojo": $my__red,
+    "blue": $my__blue,
+    "green": $my__green,
+    "bg-color-primary": $bgcolor,
+    "bg-color-secondary": $bgcolor2,
+    "bg-color-third": $bgcolor3,
+    "bg-color-quarter": $bgcolor4,
     "arsenal": rgba(255, 0, 0, 0.666),
     "aston": rgba(255, 0, 55, 0.659),
     "brentford": rgba(255, 0, 0, 0.597),

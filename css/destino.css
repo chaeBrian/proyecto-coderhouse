@@ -452,7 +452,8 @@ body {
     .login .container .card .card-body .form-check input {
       background-color: #111111;
       border: solid 0.1em #ebebeb;
-      border-radius: 0; }
+      border-radius: 0;
+      margin-right: 0.4em; }
       .login .container .card .card-body .form-check input:hover {
         background-color: #00fc54; }
     .login .container .card .card-body .login__botonGg {

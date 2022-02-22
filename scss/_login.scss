@@ -2,7 +2,7 @@
     .container{
         @include galeryPhotoBorder(solid, solid, transparent, transparent);
         .card{
-            background-color: $bgcolor3;
+            background-color: map-get($colors, "bg-color-third");
             border-radius: 0 !important;
             .card-body{
                 .form-outline{
@@ -11,27 +11,28 @@
                     }
                 }
                 .login__botonIngreso{
-                    color: $color1;
+                    color: map-get($colors, "primary");
                     border-bottom: 0.1em solid $color1;
                     border-radius: 0;
                     &:hover{
-                        background-color: $color2;
-                        color: $bgcolor3;
+                        background-color: map-get($colors, "secundary");
+                        color:  map-get($colors, "bg-color-third");
                         font-weight: bold;
                     }
                 }
                 .form-check{
                     input{
-                        background-color: $bgcolor3;
+                        background-color: map-get($colors, "bg-color-third");
                         border: solid 0.1em $color1;
                         border-radius: 0;
+                        margin-right: 0.4em;
                         &:hover{
-                            background-color: $color2;
+                            background-color: map-get($colors, "secundary");
                         }
                     }
                 }
                 .login__botonGg{
-                    color: $color1;
+                    color: map-get($colors, "primary");
                     border: 0.1em solid rgb(248, 72, 72);
                     border-radius: 0;
                     margin-bottom: 0.5em;
@@ -40,7 +41,7 @@
                     }
                 }
                 .login__botonFb{
-                    color: $color1;
+                    color: map-get($colors, "primary");
                     border: 0.1em solid rgb(101, 101, 253);
                     border-radius: 0;
                     &:hover{

@@ -1,11 +1,11 @@
 .contact{
     h2{
-        color: $color2;
+        color: map-get($colors, "secundary");
     }
     h5{
-        background-color: $color2;
+        background-color: map-get($colors, "secundary");
         padding: 0.5em;
-        color: $bgcolor3;
+        color: map-get($colors, "bg-color-third");
         font-weight: bold;
     }
     p{
@@ -21,19 +21,19 @@
         width: 50%;
         .form-check{
             input{
-                background-color: $bgcolor3;
+                background-color: map-get($colors, "bg-color-third");
                 border: 0.1em solid $color1;
                 border-radius: 0;
             }
         }
         button{
             width: 30%;
-            background-color: $bgcolor3;
+            background-color: map-get($colors, "bg-color-third");
             border: none;
             @include galeryPhotoBorder( solid, transparent, solid, transparent);
             &:hover{
-                background-color: $color2;
-                color: $bgcolor3;
+                background-color: map-get($colors, "secundary");
+                color: map-get($colors, "bg-color-third");
                 font-weight: bold;
             }
         }
