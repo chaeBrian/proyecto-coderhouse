@@ -21,26 +21,26 @@ $colors: (
     "bg-color-secondary": $bgcolor2,
     "bg-color-third": $bgcolor3,
     "bg-color-quarter": $bgcolor4,
-    "arsenal": rgba(255, 0, 0, 0.666),
-    "aston": rgba(255, 0, 55, 0.659),
-    "brentford": rgba(255, 0, 0, 0.597),
-    "brighton": rgba(0, 255, 208, 0.481),
-    "burnley": rgba(255, 0, 111, 0.337),
-    "chelsea": rgba(0, 60, 255, 0.645),
-    "crystal": rgba(85, 125, 255, 0.645),
-    "everton": rgba(37, 69, 175, 0.645),
-    "leeds": rgba(143, 133, 60, 0.522),
-    "leicester": rgba(11, 36, 119, 0.734),
-    "liverpool": rgba(213, 50, 85, 0.734),
+    "arsenal": rgba(255, 0, 0, 0.668),
+    "aston": rgba(145, 14, 43, 0.775),
+    "brentford": rgba(242, 69, 69, 0.789),
+    "brighton": rgba(0, 102, 255, 0.686),
+    "burnley": rgba(202, 6, 91, 0.727),
+    "chelsea": rgba(0, 60, 255, 0.693),
+    "crystal": rgba(105, 135, 237, 0.761),
+    "everton": rgba(25, 62, 184, 0.761),
+    "leeds": rgba(138, 138, 138, 0.727),
+    "leicester": rgba(9, 38, 131, 0.802),
+    "liverpool": rgba(255, 0, 0, 0.796),
     "city": rgba(3, 171, 209, 0.734),
-    "united": rgba(136, 8, 8, 0.665),
-    "newcastle": rgba(85, 85, 85, 0.665),
-    "norwich": rgba(39, 167, 71, 0.665),
-    "southampton": rgba(218, 84, 84, 0.665),
-    "spurs": rgba(80, 80, 80, 0.816),
-    "watford": rgba(169, 145, 48, 0.816),
-    "westham": rgba(141, 43, 113, 0.816),
-    "wolves": rgba(255, 168, 7, 0.624),
+    "united": rgba(255, 0, 0, 0.734),
+    "newcastle": rgba(17, 17, 17, 0.864),
+    "norwich": rgba(39, 167, 71, 0.816),
+    "southampton": rgba(187, 26, 26, 0.796),
+    "spurs": rgba(162, 162, 162, 0.87),
+    "watford": rgba(206, 170, 23, 0.781),
+    "westham": rgba(148, 20, 112, 0.816),
+    "wolves": rgba(175, 115, 3, 0.734),
 );
 
 
@@ -242,21 +242,6 @@ body{
         }
     }
 }
-@media (max-width: 992px){
-    body{
-        .header{
-            margin-top: -13vw;
-            nav{
-                img{
-                    width: 10%;
-                }
-            }
-        }
-        .home{
-            margin-top: 14vw;
-        }
-    }
-}
 
 //Main
 .home{
@@ -384,7 +369,47 @@ body{
             }
         }
         div:last-child{
+            table{
+                @include galeryPhotoBorder(solid, transparent, solid, solid);
+                text-align: center;
+                width: 100%;
+                margin: auto;
+                border-collapse: separate;
+                border-spacing: 0px 20px;
+                margin-bottom: 3em;
+                thead{
+                    tr th{
+                        font-weight: lighter;
+                        font-size: smaller;
+                        font-style: italic;
+                        width: 2%;
+                    }
+                    tr th:nth-child(3){
+                        width: 5%;
+
+                    }
+                }
+                tbody{
+                    tr{
+                        td{
+                            &:nth-child(1){
+                                font-size: smaller;
+                            }
+                            &:nth-child(3){
+                                text-align: left;
+                            }
+                            &:nth-child(4){
+                                font-size: smaller;
+                            }
+                            &:nth-child(5){
+                                font-size: smaller;
+                            }
+                        }
+                    }
+                }
+            }
             .brazo__caja{
+                margin-bottom: 1.5em;
                 background-image: url(../images/png/cr7.png);
                 @extend %brazo-enlace
             }
@@ -503,6 +528,7 @@ body{
 
 //copy
 .copy{
+    margin-bottom: 2em;
     div{
         div{
             justify-content: center;
@@ -515,6 +541,48 @@ body{
                 }
                 a{
                     color: $color1;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 992px){
+    body{
+        .header{
+            margin-top: -14vw;
+            nav{
+                img{
+                    width: 10%;
+                }
+            }
+        }
+        .home{
+            margin-top: 14vw;
+        }
+    }
+}
+
+//MQ solo para correcciones en la seccion "galeria"
+@media (max-width: 460px) {
+    .galeria{
+        margin-top: 2vw;
+        div{
+            .galeria__box{
+                background-color: transparent !important;
+                border: none;
+                border-radius: 0vw;
+                img{
+                    padding: 10px 0;
+                }
+                div{
+                    background-color: $bgcolor2;
+                    height: 10rem;
+                    h5{
+                        padding: 0.5rem;
+                        font-size: larger;
+                    }
                 }
             }
         }

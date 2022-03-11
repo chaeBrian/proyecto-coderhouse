@@ -10,15 +10,19 @@
     }
     p{
         width: 80%;
-        ol{
-            margin-left: 2em !important;
-        }
+    }
+    ol{
+        margin-left: 2em !important;
     }
 }
 .contact__form{
     margin-top: 3em;
     form{
+        @include galeryPhotoBorder( solid, solid, transparent, transparent);
         width: 50%;
+        h2{
+            margin-top: 0.5em;
+        }
         .form-check{
             input{
                 background-color: map-get($colors, "bg-color-third");
@@ -30,7 +34,8 @@
             width: 30%;
             background-color: map-get($colors, "bg-color-third");
             border: none;
-            @include galeryPhotoBorder( solid, transparent, solid, transparent);
+            margin-top: 2em;
+            @include galeryPhotoBorder( transparent, transparent, solid, transparent);
             &:hover{
                 background-color: map-get($colors, "secundary");
                 color: map-get($colors, "bg-color-third");

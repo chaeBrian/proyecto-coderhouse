@@ -109,14 +109,6 @@ body {
     body .header nav .header__boton:active {
       border: 2px solid #00fc54; }
 
-@media (max-width: 992px) {
-  body .header {
-    margin-top: -13vw; }
-    body .header nav img {
-      width: 10%; }
-  body .home {
-    margin-top: 14vw; } }
-
 .home {
   border-left: 0.1em solid #ebebeb !important;
   border-top: 0.1em solid #ebebeb !important;
@@ -187,7 +179,35 @@ body {
         position: absolute;
         top: 0.0300em;
         left: -0.0400em; }
+  .noticias article div:last-child table {
+    border-left: 0.1em solid #ebebeb !important;
+    border-top: 0.1em transparent #ebebeb !important;
+    border-bottom: 0.1em solid #ebebeb !important;
+    border-right: 0.1em solid #ebebeb !important;
+    border-radius: 0vw;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 0px 20px;
+    margin-bottom: 3em; }
+    .noticias article div:last-child table thead tr th {
+      font-weight: lighter;
+      font-size: smaller;
+      font-style: italic;
+      width: 2%; }
+    .noticias article div:last-child table thead tr th:nth-child(3) {
+      width: 5%; }
+    .noticias article div:last-child table tbody tr td:nth-child(1) {
+      font-size: smaller; }
+    .noticias article div:last-child table tbody tr td:nth-child(3) {
+      text-align: left; }
+    .noticias article div:last-child table tbody tr td:nth-child(4) {
+      font-size: smaller; }
+    .noticias article div:last-child table tbody tr td:nth-child(5) {
+      font-size: smaller; }
   .noticias article div:last-child .brazo__caja {
+    margin-bottom: 1.5em;
     background-image: url(../images/png/cr7.png); }
   .noticias article div:last-child .brazo__caja--modifier {
     background-image: url(../images/png/salah.png); }
@@ -258,16 +278,54 @@ body {
       position: relative;
       color: #00fc54; }
 
-.copy div div {
-  justify-content: center;
-  margin: auto; }
-  .copy div div li {
-    font-size: 0.6em;
-    color: #ebebeb; }
-    .copy div div li:hover {
+.copy {
+  margin-bottom: 2em; }
+  .copy div div {
+    justify-content: center;
+    margin: auto; }
+    .copy div div li {
+      font-size: 0.6em;
       color: #ebebeb; }
-    .copy div div li a {
-      color: #ebebeb; }
+      .copy div div li:hover {
+        color: #ebebeb; }
+      .copy div div li a {
+        color: #ebebeb; }
+
+@media (max-width: 992px) {
+  body .header {
+    margin-top: -14vw; }
+    body .header nav img {
+      width: 10%; }
+  body .home {
+    margin-top: 14vw; } }
+
+@media (max-width: 460px) {
+  .galeria {
+    margin-top: 2vw; }
+    .galeria div .galeria__box {
+      background-color: transparent !important;
+      border: none;
+      border-radius: 0vw; }
+      .galeria div .galeria__box img {
+        padding: 10px 0; }
+      .galeria div .galeria__box div {
+        background-color: rgba(0, 0, 0, 0.548);
+        height: 10rem; }
+        .galeria div .galeria__box div h5 {
+          padding: 0.5rem;
+          font-size: larger; } }
+
+.clubs div .clubs__box #arsenal, .clubs div .clubs__box #aston, .clubs div .clubs__box #brentford, .clubs div .clubs__box #brighton, .clubs div .clubs__box #burnley, .clubs div .clubs__box #chelsea, .clubs div .clubs__box #crystal, .clubs div .clubs__box #everton, .clubs div .clubs__box #leeds, .clubs div .clubs__box #leicester, .clubs div .clubs__box #liverpool, .clubs div .clubs__box #city, .clubs div .clubs__box #united, .clubs div .clubs__box #newcastle, .clubs div .clubs__box #norich, .clubs div .clubs__box #soton, .clubs div .clubs__box #spurs, .clubs div .clubs__box #watford, .clubs div .clubs__box #wham, .clubs div .clubs__box #wolves {
+  transition: all 1s; }
+  .clubs div .clubs__box #arsenal div:last-child .card-body, .clubs div .clubs__box #aston div:last-child .card-body, .clubs div .clubs__box #brentford div:last-child .card-body, .clubs div .clubs__box #brighton div:last-child .card-body, .clubs div .clubs__box #burnley div:last-child .card-body, .clubs div .clubs__box #chelsea div:last-child .card-body, .clubs div .clubs__box #crystal div:last-child .card-body, .clubs div .clubs__box #everton div:last-child .card-body, .clubs div .clubs__box #leeds div:last-child .card-body, .clubs div .clubs__box #leicester div:last-child .card-body, .clubs div .clubs__box #liverpool div:last-child .card-body, .clubs div .clubs__box #city div:last-child .card-body, .clubs div .clubs__box #united div:last-child .card-body, .clubs div .clubs__box #newcastle div:last-child .card-body, .clubs div .clubs__box #norich div:last-child .card-body, .clubs div .clubs__box #soton div:last-child .card-body, .clubs div .clubs__box #spurs div:last-child .card-body, .clubs div .clubs__box #watford div:last-child .card-body, .clubs div .clubs__box #wham div:last-child .card-body, .clubs div .clubs__box #wolves div:last-child .card-body {
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 1s; }
+  .clubs div .clubs__box #arsenal:hover, .clubs div .clubs__box #aston:hover, .clubs div .clubs__box #brentford:hover, .clubs div .clubs__box #brighton:hover, .clubs div .clubs__box #burnley:hover, .clubs div .clubs__box #chelsea:hover, .clubs div .clubs__box #crystal:hover, .clubs div .clubs__box #everton:hover, .clubs div .clubs__box #leeds:hover, .clubs div .clubs__box #leicester:hover, .clubs div .clubs__box #liverpool:hover, .clubs div .clubs__box #city:hover, .clubs div .clubs__box #united:hover, .clubs div .clubs__box #newcastle:hover, .clubs div .clubs__box #norich:hover, .clubs div .clubs__box #soton:hover, .clubs div .clubs__box #spurs:hover, .clubs div .clubs__box #watford:hover, .clubs div .clubs__box #wham:hover, .clubs div .clubs__box #wolves:hover {
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 1s; }
+    .clubs div .clubs__box #arsenal:hover div:last-child .card-body, .clubs div .clubs__box #aston:hover div:last-child .card-body, .clubs div .clubs__box #brentford:hover div:last-child .card-body, .clubs div .clubs__box #brighton:hover div:last-child .card-body, .clubs div .clubs__box #burnley:hover div:last-child .card-body, .clubs div .clubs__box #chelsea:hover div:last-child .card-body, .clubs div .clubs__box #crystal:hover div:last-child .card-body, .clubs div .clubs__box #everton:hover div:last-child .card-body, .clubs div .clubs__box #leeds:hover div:last-child .card-body, .clubs div .clubs__box #leicester:hover div:last-child .card-body, .clubs div .clubs__box #liverpool:hover div:last-child .card-body, .clubs div .clubs__box #city:hover div:last-child .card-body, .clubs div .clubs__box #united:hover div:last-child .card-body, .clubs div .clubs__box #newcastle:hover div:last-child .card-body, .clubs div .clubs__box #norich:hover div:last-child .card-body, .clubs div .clubs__box #soton:hover div:last-child .card-body, .clubs div .clubs__box #spurs:hover div:last-child .card-body, .clubs div .clubs__box #watford:hover div:last-child .card-body, .clubs div .clubs__box #wham:hover div:last-child .card-body, .clubs div .clubs__box #wolves:hover div:last-child .card-body {
+      color: rgba(0, 0, 0, 0);
+      transition: all 1s; }
 
 .clubs__banner {
   border-left: 0.1em transparent #ebebeb !important;
@@ -289,97 +347,77 @@ body {
   padding: 0em; }
   .clubs div .clubs__box .row div:last-child .card-body {
     padding: 8px;
-    margin: 8px;
-    border-left: 0.1em transparent #ebebeb !important;
-    border-top: 0.1em solid #ebebeb !important;
+    margin-top: 1.2em;
+    margin-right: 2em;
+    border-left: 0.1em solid #ebebeb !important;
+    border-top: 0.1em transparent #ebebeb !important;
     border-bottom: 0.1em transparent #ebebeb !important;
-    border-right: 0.1em solid #ebebeb !important;
-    border-radius: 0vw;
-    background-color: rgba(0, 0, 0, 0.624); }
+    border-right: 0.1em transparent #ebebeb !important;
+    border-radius: 0vw; }
 
-.clubs div .clubs__box:hover #arsenal {
-  background-color: rgba(255, 0, 0, 0.666);
-  font-weight: bold; }
+.clubs div .clubs__box #arsenal {
+  background-color: rgba(255, 0, 0, 0.668); }
 
-.clubs div .clubs__box:hover #aston {
-  background-color: rgba(255, 0, 55, 0.659);
-  font-weight: bold; }
+.clubs div .clubs__box #aston {
+  background-color: rgba(145, 14, 43, 0.775); }
 
-.clubs div .clubs__box:hover #brentford {
-  background-color: rgba(255, 0, 0, 0.597);
-  font-weight: bold; }
+.clubs div .clubs__box #brentford {
+  background-color: rgba(242, 69, 69, 0.789); }
 
-.clubs div .clubs__box:hover #brighton {
-  background-color: rgba(0, 255, 208, 0.481);
-  font-weight: bold; }
+.clubs div .clubs__box #brighton {
+  background-color: rgba(0, 102, 255, 0.686); }
 
-.clubs div .clubs__box:hover #burnley {
-  background-color: rgba(255, 0, 111, 0.337);
-  font-weight: bold; }
+.clubs div .clubs__box #burnley {
+  background-color: rgba(202, 6, 91, 0.727); }
 
-.clubs div .clubs__box:hover #chelsea {
-  background-color: rgba(0, 60, 255, 0.645);
-  font-weight: bold; }
+.clubs div .clubs__box #chelsea {
+  background-color: rgba(0, 60, 255, 0.693); }
 
-.clubs div .clubs__box:hover #crystal {
-  background-color: rgba(85, 125, 255, 0.645);
-  font-weight: bold; }
+.clubs div .clubs__box #crystal {
+  background-color: rgba(105, 135, 237, 0.761); }
 
-.clubs div .clubs__box:hover #everton {
-  background-color: rgba(37, 69, 175, 0.645);
-  font-weight: bold; }
+.clubs div .clubs__box #everton {
+  background-color: rgba(25, 62, 184, 0.761); }
 
-.clubs div .clubs__box:hover #leeds {
-  background-color: rgba(143, 133, 60, 0.522);
-  font-weight: bold; }
+.clubs div .clubs__box #leeds {
+  background-color: rgba(138, 138, 138, 0.727); }
 
-.clubs div .clubs__box:hover #leicester {
-  background-color: rgba(11, 36, 119, 0.734);
-  font-weight: bold; }
+.clubs div .clubs__box #leicester {
+  background-color: rgba(9, 38, 131, 0.802); }
 
-.clubs div .clubs__box:hover #liverpool {
-  background-color: rgba(213, 50, 85, 0.734);
-  font-weight: bold; }
+.clubs div .clubs__box #liverpool {
+  background-color: rgba(255, 0, 0, 0.796); }
 
-.clubs div .clubs__box:hover #city {
-  background-color: rgba(3, 171, 209, 0.734);
-  font-weight: bold; }
+.clubs div .clubs__box #city {
+  background-color: rgba(3, 171, 209, 0.734); }
 
-.clubs div .clubs__box:hover #united {
-  background-color: rgba(136, 8, 8, 0.665);
-  font-weight: bold; }
+.clubs div .clubs__box #united {
+  background-color: rgba(255, 0, 0, 0.734); }
 
-.clubs div .clubs__box:hover #newcastle {
-  background-color: rgba(85, 85, 85, 0.665);
-  font-weight: bold; }
+.clubs div .clubs__box #newcastle {
+  background-color: rgba(17, 17, 17, 0.864); }
 
-.clubs div .clubs__box:hover #norich {
-  background-color: rgba(39, 167, 71, 0.665);
-  font-weight: bold; }
+.clubs div .clubs__box #norich {
+  background-color: rgba(39, 167, 71, 0.816); }
 
-.clubs div .clubs__box:hover #soton {
-  background-color: rgba(218, 84, 84, 0.665);
-  font-weight: bold; }
+.clubs div .clubs__box #soton {
+  background-color: rgba(187, 26, 26, 0.796); }
 
-.clubs div .clubs__box:hover #spurs {
-  background-color: rgba(80, 80, 80, 0.816);
-  font-weight: bold; }
+.clubs div .clubs__box #spurs {
+  background-color: rgba(162, 162, 162, 0.87); }
 
-.clubs div .clubs__box:hover #watford {
-  background-color: rgba(169, 145, 48, 0.816);
-  font-weight: bold; }
+.clubs div .clubs__box #watford {
+  background-color: rgba(206, 170, 23, 0.781); }
 
-.clubs div .clubs__box:hover #wham {
-  background-color: rgba(141, 43, 113, 0.816);
-  font-weight: bold; }
+.clubs div .clubs__box #wham {
+  background-color: rgba(148, 20, 112, 0.816); }
 
-.clubs div .clubs__box:hover #wolves {
-  background-color: rgba(255, 168, 7, 0.624);
-  font-weight: bold; }
+.clubs div .clubs__box #wolves {
+  background-color: rgba(175, 115, 3, 0.734); }
 
 @media (max-width: 992px) {
   .clubs__banner {
-    margin-top: 13vw; }
+    margin-top: 14vw; }
   .clubs .clubs__box {
     width: 100%; } }
 
@@ -401,13 +439,21 @@ body {
 
 .contact p {
   width: 80%; }
-  .contact p ol {
-    margin-left: 2em !important; }
+
+.contact ol {
+  margin-left: 2em !important; }
 
 .contact__form {
   margin-top: 3em; }
   .contact__form form {
+    border-left: 0.1em solid #ebebeb !important;
+    border-top: 0.1em solid #ebebeb !important;
+    border-bottom: 0.1em transparent #ebebeb !important;
+    border-right: 0.1em transparent #ebebeb !important;
+    border-radius: 0vw;
     width: 50%; }
+    .contact__form form h2 {
+      margin-top: 0.5em; }
     .contact__form form .form-check input {
       background-color: #111111;
       border: 0.1em solid #ebebeb;
@@ -416,7 +462,8 @@ body {
       width: 30%;
       background-color: #111111;
       border: none;
-      border-left: 0.1em solid #ebebeb !important;
+      margin-top: 2em;
+      border-left: 0.1em transparent #ebebeb !important;
       border-top: 0.1em transparent #ebebeb !important;
       border-bottom: 0.1em solid #ebebeb !important;
       border-right: 0.1em transparent #ebebeb !important;
@@ -443,8 +490,8 @@ body {
       border-radius: 0; }
     .login .container .card .card-body .login__botonIngreso {
       color: #ebebeb;
-      border-bottom: 0.1em solid #ebebeb;
-      border-radius: 0; }
+      border-radius: 0;
+      margin: 0 1.5em; }
       .login .container .card .card-body .login__botonIngreso:hover {
         background-color: #00fc54;
         color: #111111;

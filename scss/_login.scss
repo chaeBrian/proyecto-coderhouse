@@ -12,8 +12,8 @@
                 }
                 .login__botonIngreso{
                     color: map-get($colors, "primary");
-                    border-bottom: 0.1em solid $color1;
                     border-radius: 0;
+                    margin: 0 1.5em;
                     &:hover{
                         background-color: map-get($colors, "secundary");
                         color:  map-get($colors, "bg-color-third");

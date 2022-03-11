@@ -1,3 +1,24 @@
+//Extends
+%clubs__animacion{
+    transition: all 1s;
+    div:last-child{
+        .card-body{
+            background-color: rgba(0, 0, 0, 0);
+            transition: all 1s;
+        }
+    }
+    &:hover{
+        background-color: rgba(0, 0, 0, 0);
+        div:last-child{
+            .card-body{
+                color: rgba(0, 0, 0, 0);
+                transition: all 1s;
+            }
+        }
+        transition: all 1s;
+    }
+}
+
 .clubs__banner{
     border-left: 0.1em transparent $color1 !important;
     border-top: 0.1em solid $color1  !important;
@@ -24,99 +45,99 @@
                 div:last-child{
                     .card-body{
                         padding: 8px;
-                        margin: 8px;
-                        @include galeryPhotoBorder(transparent, solid, transparent, solid);
-                        background-color: map-get($colors, "bg-color-quarter");
+                        margin-top: 1.2em;
+                        margin-right: 2em;
+                        @include galeryPhotoBorder(solid, transparent, transparent, transparent);
                     }
                 }
             }
         }
-        .clubs__box:hover #arsenal{
+        .clubs__box #arsenal{
             background-color: map-get($colors , "arsenal");
-            font-weight: bold;
+            @extend %clubs__animacion;
         }
-        .clubs__box:hover #aston{
+        .clubs__box #aston{
             background-color: map-get($colors , "aston");
-            font-weight: bold;
+            @extend %clubs__animacion;
         }
-        .clubs__box:hover #brentford{
+        .clubs__box #brentford{
             background-color: map-get($colors , "brentford");
-            font-weight: bold;
+            @extend %clubs__animacion;
         }
-        .clubs__box:hover #brighton{
+        .clubs__box #brighton{
             background-color: map-get($colors , "brighton");
-            font-weight: bold;
+            @extend %clubs__animacion;
         }
-        .clubs__box:hover #burnley{
+        .clubs__box #burnley{
             background-color: map-get($colors , "burnley");
-            font-weight: bold;
+            @extend %clubs__animacion;
         }
-        .clubs__box:hover #chelsea{
+        .clubs__box #chelsea{
             background-color: map-get($colors , "chelsea");
-            font-weight: bold;
+            @extend %clubs__animacion;
         }
-        .clubs__box:hover #crystal{
+        .clubs__box #crystal{
             background-color: map-get($colors , "crystal");
-            font-weight: bold;
+            @extend %clubs__animacion;
         }
-        .clubs__box:hover #everton{
+        .clubs__box #everton{
             background-color: map-get($colors , "everton");
-            font-weight: bold;
+            @extend %clubs__animacion;
         }
-        .clubs__box:hover #leeds{
+        .clubs__box #leeds{
             background-color: map-get($colors , "leeds");
-            font-weight: bold;
+            @extend %clubs__animacion;
         }
-        .clubs__box:hover #leicester{
+        .clubs__box #leicester{
             background-color: map-get($colors , "leicester");
-            font-weight: bold;
+            @extend %clubs__animacion;
         }
-        .clubs__box:hover #liverpool{
+        .clubs__box #liverpool{
             background-color: map-get($colors , "liverpool");
-            font-weight: bold;
+            @extend %clubs__animacion;
         }
-        .clubs__box:hover #city{
+        .clubs__box #city{
             background-color: map-get($colors , "city");
-            font-weight: bold;
+            @extend %clubs__animacion;
         }
-        .clubs__box:hover #united{
+        .clubs__box #united{
             background-color: map-get($colors , "united");
-            font-weight: bold;
+            @extend %clubs__animacion;
         }
-        .clubs__box:hover #newcastle{
+        .clubs__box #newcastle{
             background-color: map-get($colors , "newcastle");
-            font-weight: bold;
+            @extend %clubs__animacion;
         }
-        .clubs__box:hover #norich{
+        .clubs__box #norich{
             background-color: map-get($colors , "norwich");
-            font-weight: bold;
+            @extend %clubs__animacion;
         }
-        .clubs__box:hover #soton{
+        .clubs__box #soton{
             background-color: map-get($colors , "southampton");
-            font-weight: bold;
+            @extend %clubs__animacion;
         }
-        .clubs__box:hover #spurs{
+        .clubs__box #spurs{
             background-color: map-get($colors , "spurs");
-            font-weight: bold;
+            @extend %clubs__animacion;
         }
-        .clubs__box:hover #watford{
+        .clubs__box #watford{
             background-color: map-get($colors , "watford");
-            font-weight: bold;
+            @extend %clubs__animacion;
         }
-        .clubs__box:hover #wham{
+        .clubs__box #wham{
             background-color: map-get($colors , "westham");
-            font-weight: bold;
+            @extend %clubs__animacion;
         }
-        .clubs__box:hover #wolves{
+        .clubs__box #wolves{
             background-color: map-get($colors , "wolves");
-            font-weight: bold;
+            @extend %clubs__animacion;
         }
     }
 }
 
 @media (max-width: 992px) {
     .clubs__banner{
-        margin-top: 13vw;
+        margin-top: 14vw;
     }
     .clubs{
         .clubs__box{
