@@ -5,7 +5,7 @@ $color1: rgb(235, 235, 235);
 $color2: rgb(0, 252, 84);
 $my__red: rgba(255, 0, 0, 0.75);
 $my__blue: rgba(0, 0, 255, 0.75);
-$my__green: rgba(0, 255, 0, 0.75);
+$my__green: rgba(0, 255, 0, 0.749);
 $bgcolor: rgba(0, 0, 0, 0.542);
 $bgcolor2: rgba(0, 0, 0, 0.548);
 $bgcolor3: rgb(17, 17, 17);
@@ -386,7 +386,7 @@ body{
                     }
                     tr th:nth-child(3){
                         width: 5%;
-
+                        text-align: left;
                     }
                 }
                 tbody{
