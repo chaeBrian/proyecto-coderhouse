@@ -114,6 +114,7 @@ body {
   border-top: 0.1em solid #ebebeb !important;
   border-bottom: 0.1em transparent #ebebeb !important;
   border-right: 0.1em transparent #ebebeb !important;
+  border-radius: 0vw;
   padding: 2vw;
   margin-top: 10vw; }
   .home .carousel .carousel-indicators {
@@ -333,6 +334,7 @@ body {
   border-top: 0.1em solid #ebebeb !important;
   border-bottom: 0.1em transparent #ebebeb !important;
   border-right: 0.1em transparent #ebebeb !important;
+  border-radius: 0vw;
   padding: 2vw;
   margin-top: 10vw; }
   .clubs__banner h1 {
@@ -346,6 +348,11 @@ body {
   border: none;
   border-radius: 0em;
   padding: 0em; }
+  .clubs div .clubs__box a {
+    color: #ebebeb;
+    text-decoration: none; }
+    .clubs div .clubs__box a:active {
+      color: #ebebeb; }
   .clubs div .clubs__box .row div:last-child .card-body {
     padding: 8px;
     margin-top: 1.2em;
@@ -517,3 +524,87 @@ body {
       border-radius: 0; }
       .login .container .card .card-body .login__botonFb:hover {
         background-color: #6565fd; }
+
+.clubPage .clubPage__contenedor {
+  margin-top: 10vw;
+  padding: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 0.1em solid #ebebeb !important;
+  border-top: 0.1em solid #ebebeb !important;
+  border-bottom: 0.1em transparent #ebebeb !important;
+  border-right: 0.1em solid #ebebeb !important;
+  border-radius: 0vw; }
+  .clubPage .clubPage__contenedor div:first-child {
+    flex-direction: column; }
+    .clubPage .clubPage__contenedor div:first-child h1 {
+      text-align: center; }
+    .clubPage .clubPage__contenedor div:first-child h2 {
+      text-align: center; }
+  .clubPage .clubPage__contenedor div:last-child {
+    flex-direction: column; }
+    .clubPage .clubPage__contenedor div:last-child h2 {
+      text-align: center; }
+      .clubPage .clubPage__contenedor div:last-child h2 a {
+        color: #ebebeb;
+        text-decoration: none;
+        transition: 0.5s; }
+        .clubPage .clubPage__contenedor div:last-child h2 a:hover {
+          color: #00fc54;
+          transition: 0.5s; }
+        .clubPage .clubPage__contenedor div:last-child h2 a:active {
+          color: #ebebeb; }
+    .clubPage .clubPage__contenedor div:last-child ul {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      padding: 0; }
+      .clubPage .clubPage__contenedor div:last-child ul li {
+        margin: 10px; }
+      .clubPage .clubPage__contenedor div:last-child ul svg {
+        color: #ebebeb;
+        transition: 0.5s; }
+        .clubPage .clubPage__contenedor div:last-child ul svg:hover {
+          color: #00fc54;
+          transition: 0.5s; }
+  .clubPage .clubPage__contenedor img {
+    max-width: 170px;
+    min-width: 170px; }
+
+.clubPage__main article h3 {
+  margin: 1em 0.5em; }
+
+.clubPage__main article h5 {
+  margin: 0 1.5em;
+  padding-bottom: 0.5em; }
+
+.clubPage__main article ul {
+  justify-content: center;
+  border-left: 0.1em transparent #ebebeb !important;
+  border-top: 0.1em solid #ebebeb !important;
+  border-bottom: 0.1em transparent #ebebeb !important;
+  border-right: 0.1em transparent #ebebeb !important;
+  border-radius: 0vw; }
+  .clubPage__main article ul li {
+    margin: 1em;
+    color: #ebebeb;
+    background-color: #111111;
+    border-left: 0.1em solid #ebebeb !important;
+    border-top: 0.1em transparent #ebebeb !important;
+    border-bottom: 0.1em transparent #ebebeb !important;
+    border-right: 0.1em transparent #ebebeb !important;
+    border-radius: 0vw; }
+
+.clubPage__main article .stadium div {
+  display: flex;
+  flex-flow: column; }
+  .clubPage__main article .stadium div span {
+    margin: 0.3em;
+    font-size: small; }
+
+@media (max-width: 992px) {
+  .clubPage {
+    margin-top: 14vw; } }

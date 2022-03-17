@@ -1,0 +1,96 @@
+.clubPage{
+    .clubPage__contenedor{
+        margin-top: 10vw;
+        padding: 2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include galeryPhotoBorder(solid, solid, transparent, solid);
+        div:first-child{
+            flex-direction: column;
+            h1{
+                text-align: center;
+            }
+            h2{
+                text-align: center;
+            }
+        }
+        div:last-child{
+            flex-direction: column;
+            h2{
+                text-align: center;
+                a{
+                    color: $color1;
+                    text-decoration: none;
+                    transition: 0.5s;
+                    &:hover{
+                        color: $color2;
+                        transition: 0.5s;
+                    }
+                    &:active{
+                        color: $color1;
+                    }
+                }
+            }
+            ul{
+                display: flex;
+                flex-flow: row;
+                align-items: center;
+                justify-content: center;
+                list-style: none;
+                padding: 0;
+                li{
+                    margin: 10px;
+                }
+                svg{
+                    color: $color1;
+                    transition: 0.5s;
+                    &:hover{
+                        color: $color2;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+        img{
+            max-width: 170px;
+            min-width: 170px;
+        }
+    }
+}
+.clubPage__main{
+    article{
+        h3{
+            margin: 1em 0.5em;
+        }
+        h5{
+            margin: 0 1.5em;
+            padding-bottom: 0.5em;
+        }
+        ul{
+            justify-content: center;
+            @include galeryPhotoBorder (transparent, solid, transparent, transparent);
+            li{
+                margin: 1em;
+                color: $color1;
+                background-color: $bgcolor3;
+                @include galeryPhotoBorder (solid, transparent, transparent, transparent);
+            }
+        }
+        .stadium{
+            div{
+                display: flex;
+                flex-flow: column;
+                span{
+                    margin: 0.3em;
+                    font-size: small;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 992px){
+    .clubPage{
+        margin-top: 14vw;
+    }
+}
